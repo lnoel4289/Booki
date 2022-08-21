@@ -15,17 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
-    <!--icones font awesome
-    <i class="fa-solid fa-child-reaching"></i>
-    <i class="fa-solid fa-dog"></i>
-    <i class="fa-solid fa-heart"></i>
-    <i class="fa-solid fa-money-bill-wave"></i>
-    <i class="fa-solid fa-location-dot"></i>
-    -->
-
     <header>
         <div>
             <img src="images\logo\Booki.png" alt="logo_booki">
@@ -39,7 +30,50 @@
     </header>
 
     <main>
-        
+        <section id="hébergements">
+            <div id="recherche_hébergements">
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <form class="barre_de_recherche" method="post" action="#">
+                    <label for="recherche"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="search" name="recherche" id="recherche" placeholder="Ville, Pays">
+                    <input type="submit" value="Rechercher">
+                </form>
+                <div class="section_filtres_de_recherche">
+                    <div class="titre_des_filtres">
+                        <p>Filtres</p>
+                    </div>
+                    <div class="filtres_de_recherche">
+                        <div class="économique">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <p>Economique</p>
+                        </div>
+                        <div class="familial">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div class="romantique">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="animaux_autorisés">
+                            <i class="fa-solid fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+        </section>
+        <section id="Activités">
+
+        </section>
     </main>
 </body>
 </html>
+
