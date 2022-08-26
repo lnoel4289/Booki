@@ -31,40 +31,38 @@
     <main>
         <section id="hébergements">
             <div id="recherche_hébergements">
-                <div>
+                <div id="entete_recherche">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <form class="barre_de_recherche" method="post" action="#">
                     <label for="recherche"><i class="fa-solid fa-location-dot"></i></label>
-                    <input type="search" name="recherche" id="recherche" placeholder="Ville, Pays">
-                    <input type="submit" value="Rechercher">
+                    <input class="champ_recherche" type="search" name="recherche" id="recherche" placeholder="Ville, Pays">
+                    <input class="bouton_envoi" type="submit" value="Rechercher">
                 </form>
                 <div class="section_filtres_de_recherche">
-                    <div class="titre_des_filtres">
-                        <p>Filtres</p>
-                    </div>
+                    <p class="titre_des_filtres">Filtres</p>
                     <div class="filtres_de_recherche">
-                        <div class="économique">
+                        <a class="filtre" href="#">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <p>Économique</p>
-                        </div>
-                        <div class="familial">
+                        </a>
+                        <a class="filtre"  href="#">
                             <i class="fa-solid fa-child-reaching"></i>
                             <p>Familial</p>
-                        </div>
-                        <div class="romantique">
+                        </a>
+                        <a class="filtre"  href="#">
                             <i class="fa-solid fa-heart"></i>
                             <p>Romantique</p>
-                        </div>
-                        <div class="animaux_autorisés">
+                        </a>
+                        <a class="filtre"  href="#">
                             <i class="fa-solid fa-dog"></i>
                             <p>Animaux autorisés</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="information">
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
