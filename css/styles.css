@@ -37,11 +37,12 @@ nav ul{
 nav li{
     margin-left: 20px;
     font-size: 15px;
+    font-weight: 600;
 }
 
 nav a{
     text-decoration: none;
-    padding: 33px 20px 24px 20px;
+    padding: 33px 20px 33px 20px;
 }
 
 nav a:hover{
@@ -67,7 +68,7 @@ h1, h2{
     margin-top: 0;
 }
 
-#entete_recherche p{
+.entete_recherche p{
     font-size:14px;
 }
 
@@ -105,11 +106,11 @@ h1, h2{
 .bouton_envoi{
     color: white;
     font-weight: 700;
-    background-color:#0065FC ;
+    background-color:#0065FC;
     border:1px solid #0065FC;
     border-radius: 0 10px 10px 0;
     padding: 0 10px;
-    
+    cursor: pointer;    
 }
 
 /* fin BARRE DE RECHERCHE */
@@ -140,7 +141,10 @@ h1, h2{
     height: 40px;
     border-radius: 25px;
     padding-right: 20px;
-    
+}
+
+.filtre:hover{
+    color: #0065FC;
 }
 
 .filtre i{
