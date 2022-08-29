@@ -51,8 +51,14 @@ nav a:hover{
     border-top: 3px solid;
 }
 
-nav a:focus{
-    border-top: 3px solid; /* fontionne pas */
+header nav li:first-child a{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+header nav li a:active{
+    border-top: 3px solid;
+    color: #0065FC;
 }
 
 /* FIN HEADER FIXE DE NAVIGATION*/
