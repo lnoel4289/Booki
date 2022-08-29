@@ -51,15 +51,10 @@ nav a:hover{
     border-top: 3px solid;
 }
 
-header nav li:first-child a{
+/* header nav li:first-child a{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-}
-
-header nav li a:active{
-    border-top: 3px solid;
-    color: #0065FC;
-}
+} */
 
 /* FIN HEADER FIXE DE NAVIGATION*/
 /* MAIN */
@@ -205,4 +200,84 @@ h1, h2{
 /* fin ANCRES POUR MENU FIXE */
 /* SECTION HÉBERGEMENT */
 
-/* ARTICLE */
+.suggestions{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions article{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 70%;
+}
+
+.suggestions article .bloc_cartes{
+    border: 1px solid rgb(0, 255, 64);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    max-height: 600px;
+}
+
+/* CARTE HEBERGEMENT */
+
+.suggestions article .carte{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 30%;
+    height: 200px;
+}
+
+.suggestions article .carte img{
+    
+}
+
+.suggestions article .carte .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.suggestions article .carte{
+    text-decoration: none;
+}
+
+/* FIN CARTE HEBERGEMENT */
+/* ASIDE */
+
+.suggestions aside{
+    
+}
+
+.suggestions aside h2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions aside .bloc_cartes{
+    border: 1px solid red;
+    height: auto;
+    max-height: 500px;
+}
+
+.suggestions aside .carte{
+    display: flex;
+    height: 150px
+}
+
+.suggestions aside .carte img{
+    height: 100%;
+}
+
+/* FIN ASIDE */
+/* ACTIVITES */
+
+
+
