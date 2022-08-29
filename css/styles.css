@@ -42,6 +42,7 @@ nav li{
 
 nav a{
     text-decoration: none;
+    color: black;
     padding: 33px 20px 33px 20px;
 }
 
@@ -132,6 +133,7 @@ h1, h2{
 }
 
 .filtre{
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -145,6 +147,7 @@ h1, h2{
 
 .filtre:hover{
     color: #0065FC;
+    box-shadow: 2px 2px 2px #F2F2F2;
 }
 
 .filtre i{
