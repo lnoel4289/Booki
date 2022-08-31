@@ -1,5 +1,10 @@
 html{
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+   box-sizing:inherit;
 }
 
 body{
@@ -201,60 +206,88 @@ h1, h2{
 /* SECTION HÉBERGEMENT */
 
 .suggestions{
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 
-.suggestions article{
-    border: 1px solid green;
+/*  BLOC HEBERGEMENTS À MARSEILLE */
+
+.suggestions article, .suggestions aside{
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
-    width: 70%;
+    background-color: #dbc9c9;
+    padding: 30px;
+}
+
+.suggestions article{
+    width: 65%;
+}
+
+.suggestions aside{
+    width: 30%;
+}
+
+/* BLOC CARTES HEBERGEMENT*/
+
+.suggestions .bloc_cartes{
+    border: 1px solid rgb(98, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 500px;
 }
 
 .suggestions article .bloc_cartes{
-    border: 1px solid rgb(0, 255, 64);
-    display: flex;
-    flex-direction: column;
+    max-height: 450px;
     flex-wrap: wrap;
-    align-items: center;
-    height: auto;
-    max-height: 600px;
 }
+
+
 
 /* CARTE HEBERGEMENT */
 
 .suggestions article .carte{
-    border: 1px solid blue;
+    border: 3px solid white;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    width: 30%;
-    height: 200px;
+    border-radius: 23px;
+    width: 200px;
+    height: 150px;
 }
 
-.suggestions article .carte img{
-    
+.suggestions .carte .image{
+    overflow: hidden;
+    position: relative;
+   
 }
 
-.suggestions article .carte .description{
+.suggestions article .carte .image{
+    border-radius: 20px 20px 0 0;
+}
+
+.suggestions article .carte .image img{
+    /* position: absolute; */
+}
+
+.suggestions .carte .description{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
-.suggestions article .carte{
+.suggestions article .carte .description *{
+    margin: 0;   
+}
+
+.suggestions .carte{
     text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
 /* FIN CARTE HEBERGEMENT */
 /* ASIDE */
-
-.suggestions aside{
-    
-}
 
 .suggestions aside h2{
     display: flex;
@@ -264,10 +297,12 @@ h1, h2{
 .suggestions aside .bloc_cartes{
     border: 1px solid red;
     height: auto;
-    max-height: 500px;
+    max-height: 400px;
 }
 
 .suggestions aside .carte{
+    border: 1px solid blue;
+    width: 80%;
     display: flex;
     height: 150px
 }
