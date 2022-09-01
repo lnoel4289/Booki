@@ -8,8 +8,7 @@ html{
 }
 
 body{
-    width: 92%;
-    margin: auto;
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -18,7 +17,8 @@ body{
 /* HEADER FIXE DE NAVIGATION */
 
 header{
-    width: 92%;
+    width: 100%;
+    padding: 0 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +66,8 @@ nav a:hover{
 
 main{
     margin-top: 89.79px; /* hauteur du header fixe de navigation */
+    width: 92%;
+    margin: auto;
 }
 
 /* OUTILS RECHERCHE */
@@ -341,6 +343,75 @@ h2{
 /* FIN ASIDE */
 /* ACTIVITES */
 
-.activites article{
+.activites{
     
+}
+
+.activites article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites .bloc_cartes{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites .sous_bloc{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.activites .carte{
+    border: 2px solid blue;
+    width: 45%;
+}
+
+.activites .image{
+    width: 100%;
+}
+
+.activites h3{
+    
+}
+
+/* FIN ACTIVITES */
+/* FOOTER */
+
+footer{
+    background-color: #F2F2F2;
+}
+
+footer .bloc_mentions{
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .mentions{
+    width: 33.3%;   
+}
+
+footer h4{
+    font-size: 16px;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
