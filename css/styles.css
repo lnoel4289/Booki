@@ -16,7 +16,7 @@ body{
 
 header{
     width: 100%;
-    padding: 0 3%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +26,9 @@ header{
 }
 
 header img{
-    width: 80px;
-    padding-left: 20px;
-    margin-top: 24px;
-    padding-bottom: 24px;
+    width: 120px;
+    margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 nav ul{
@@ -38,9 +37,8 @@ nav ul{
 }
 
 nav li{
-    margin-left: 20px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 nav a{
@@ -63,7 +61,7 @@ nav a:hover{
 /* MAIN */
 
 main{
-    padding-top: 80.09px; /* hauteur du header fixe de navigation */
+    padding-top: 155px; /* hauteur du header fixe de navigation */
     width: 92%;
     margin: auto;
 }
@@ -71,34 +69,34 @@ main{
 /* OUTILS RECHERCHE */
 
 h1, h2{
-    font-size:larger;
+    font-size: 30px;
     margin-top: 0;
 }
 
-.entete_recherche p{
-    font-size:14px;
+h1 + p{
+    font-size:22px;
 }
 
 /* BARRE DE RECHERCHE */
 
-.barre_de_recherche{
+form{
     display: flex;
-    justify-content: space-between;
-    width: 350px;
 }
 
-.barre_de_recherche label{
+label, .champ_recherche, .bouton_envoi{
+    font-size: 25px;
+    padding: 20px 25px;
+}
+
+label{
     background-color: #F2F2F2;
-    width: 20px;
     text-align: center;
-    padding: 10px;
     border: 1px solid #F2F2F2;
-    border-radius: 10px 0 0 10px;
+    border-radius: 25px 0 0 25px;
 }
 
 .champ_recherche{
-    width: 208px;
-    padding-left: 10px;
+    padding-right: 0;
     border: hidden;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -115,8 +113,7 @@ h1, h2{
     font-weight: 700;
     background-color:#0065FC;
     border:1px solid #0065FC;
-    border-radius: 0 10px 10px 0;
-    padding: 0 10px;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;    
 }
 
@@ -124,53 +121,55 @@ h1, h2{
 /* FILTRES */
 
 .section_filtres_de_recherche{
-    display: flex;
+    font-size: 25px;
     font-weight: 700;
+    display: flex;
     margin-top: 25px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .titre_des_filtres{
-    margin-right: 30px;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
 .filtres_de_recherche{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filtre{
     color: black;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    text-decoration: none;
     margin-right: 15px;
-    border: 2px solid;
+    margin-top: 20px;
+    border: 3px solid;
     border-color: #F2F2F2;
-    height: 40px;
-    border-radius: 25px;
+    height: 60px;
+    border-radius: 30px;
     padding-right: 20px;
 }
 
 .filtre:hover{
     color: #0065FC;
-    box-shadow: 2px 2px 2px #F2F2F2;
+    box-shadow: 0px 0px 10px 1px #F2F2F2;
 }
 
 .filtre i{
-    padding: 12px;
-    /* vertical-align: middle; MARCHE PAS alors que text-align oui */
+    padding: 17px;
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid;
     border-color: #DEEBFF;
-    border-radius: 25px;
+    border-radius: 30px;
     margin-right: 10px;
     margin-left: -2px;
 }
 
 #familial{
-    padding-left: 14px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 21px;
 }
 
 /* fin FILTRES */
@@ -178,14 +177,16 @@ h1, h2{
 
 .information{
     display: flex;
-    font-size: 14px;
+    align-items: center;
+    font-size: 22px;
+    margin: 20px 10px;
 }
 
 .information i{
     color: #0065FC;
-    margin: 11px 10px 11px 5px;
     border: 1px solid #F2F2F2;
-    padding: 2px 8px;
+    padding: 8px 15px;
+    margin: 0 20px 5px 0;
     border-radius: 25px;
 }
 
@@ -194,8 +195,8 @@ h1, h2{
 /* ANCRES POUR MENU FIXE */
 
 .ancre{
-    padding-top: 80.09px;
-    margin-top: -80.09px;
+    padding-top: 155px;
+    margin-top: -155px;
 }
 
 /* fin ANCRES POUR MENU FIXE */
@@ -204,7 +205,6 @@ h1, h2{
 .suggestions{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80.09px;
 }
 
 /*  BLOC HEBERGEMENTS À MARSEILLE */
@@ -215,11 +215,6 @@ h1, h2{
     background-color: #F2F2F2;
     padding: 40px;
     border-radius: 20px;
-    height: auto;
-}
-
-h2{
-    font-size: 24px;
 }
 
 .suggestions article{
@@ -240,7 +235,6 @@ h2{
 
 .suggestions article .bloc_cartes{
     align-content: space-between;
-    height: auto;
     max-height: 500px;
     flex-wrap: wrap;
 }
@@ -248,14 +242,13 @@ h2{
 /* CARTE HEBERGEMENT */
 
 .suggestions article .carte{
-    border: 3px solid white;
+    border: 7px solid white;
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 23px;
     width: 31%;
     height: 45%;
-    max-height: 200px;
 }
 
 .suggestions .carte .image{
@@ -264,7 +257,7 @@ h2{
 }
 
 .suggestions article .carte .image{
-    border-radius: 20px 20px 0 0;
+    border-radius: 19px 19px 0 0;
 }
 
 .suggestions article .carte .image img{
@@ -306,7 +299,7 @@ h2{
 }
 
 .suggestions aside .carte{
-    border: 3px solid white;
+    border: 4px solid white;
     background-color: white;
     border-radius: 23px;
     width: 100%;
@@ -316,7 +309,7 @@ h2{
 
 .suggestions aside .carte .image{
     width: 40%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 19px 0 0 19px;
 }
 
 .suggestions aside .carte .description{
@@ -405,7 +398,7 @@ footer .mentions{
 }
 
 footer h4{
-    font-size: 16px;
+    font-size: 24px;
 }
 
 footer ul{
@@ -414,7 +407,7 @@ footer ul{
 
 footer li{
     list-style: none;
-    font-size: 14px;
+    font-size: 21px;
     margin-bottom: 14px;
 }
 
