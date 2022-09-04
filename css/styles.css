@@ -352,13 +352,13 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     width: 100%;
     max-height: 600px;
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-around;
 }
 
 #activites .bloc_cartes{
     display: flex;
     justify-content: space-between;
+    min-width: 46%;
     max-width: 48%;
     max-height: 100%;
     margin-bottom: 50px;
@@ -388,11 +388,11 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     border-radius: 23px 23px 0 0;
     overflow: hidden;
     position: relative; 
-    min-height: 89%;  
+    min-height: 89%;
 }
 
 #activites .sous_bloc .image{
-    min-height: unset;
+    min-height: fit-content;
 }
 
 #activites img{
@@ -405,16 +405,15 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 
 #activites .sous_bloc img{
     position: unset;
-    min-height: unset;
     top: unset;
     left: unset;
     transform: unset;
     width: 100%;
 }
 
-#pomegues img{
-    position: absolute;
-    top: 20px;
+#pomegues .image img{
+    position: relative;
+    bottom: 110px;
 }
 
 
