@@ -25,11 +25,16 @@ header{
     z-index: 1;
 }
 
+/* LOGO */
+
 header img{
     width: 120px;
     margin-top: 40px;
     padding-bottom: 0px;
 }
+
+/* fin LOGO */
+/* NAV */
 
 nav ul{
     display: flex;
@@ -53,12 +58,8 @@ nav a:hover{
     border-top: 3px solid;
 }
 
-/* header nav li:first-child a{
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-} */
-
-/* FIN HEADER FIXE DE NAVIGATION*/
+/* fin NAV */
+/* fin HEADER FIXE DE NAVIGATION*/
 /* MAIN */
 
 main{
@@ -144,7 +145,7 @@ label{
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 40px;
     margin-top: 20px;
     border: 3px solid;
     border-color: #F2F2F2;
@@ -207,6 +208,7 @@ label{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    height: 800px;
 }
 
 /*  BLOC HEBERGEMENTS À MARSEILLE */
@@ -215,16 +217,16 @@ label{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 50px;
     border-radius: 20px;
 }
 
 .suggestions article{
-    width: 67%;
+    width: 65%;
 }
 
 .suggestions aside{
-    width: 30%;
+    width: 31%;
 }
 
 /* BLOC CARTES HEBERGEMENT*/
@@ -238,8 +240,10 @@ label{
 .suggestions article .bloc_cartes{
     align-content: space-between;
     flex-wrap: wrap;
-    max-height: 85%;
+    height: 85%;
 }
+
+/* ETOILES BLEUES */
 
 .etoiles{
     display: flex;
@@ -247,10 +251,13 @@ label{
     color: #0065FC;
 }
 
+/* ETOILES GRISES */
+
 article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-child(5), article .carte:nth-child(4) i:nth-child(5), article .carte:nth-child(5) i:nth-child(5), article .carte:nth-child(2) i:nth-child(4), aside .carte:nth-child(2) i:nth-child(5), aside .carte:nth-child(3) i:nth-child(5){
     color: #F2F2F2;
 }
 
+/* fin ETOILES GRISES */
 /* CARTE HEBERGEMENT */
 
 .suggestions article .carte{
@@ -265,7 +272,7 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 
 .carte .image{
     overflow: hidden;
-    position: relative;  
+    position: relative;
 }
 
 .suggestions article .carte .image{
@@ -350,15 +357,14 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 
 #activites article{
     width: 100%;
-    max-height: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #activites .bloc_cartes{
     display: flex;
     justify-content: space-between;
-    min-width: 46%;
+    width: 51%;
     max-width: 48%;
     max-height: 100%;
     margin-bottom: 50px;
@@ -366,21 +372,50 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 
 #activites .carte{
     width: 46%;
-    max-height: 100%;
+    min-width: 46%;
+    max-height: 550px;
     flex-direction: column;
     border-radius: 23px;
     justify-content: space-between;
 }
 
+#activites img{
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #activites .sous_bloc{
     width: 46%;
+    max-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#activites .sous_bloc .carte{
+#activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(1){
     width: 100%;
+    height: 52%;
+    max-height: 56%;
+}
+
+#activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(2){
+    width: 100%;
+    height: 38%;
+    max-height: 47%;
+}
+
+#activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(1){
+    width: 100%;
+    height: 43%;
+    max-height: 56%;
+}
+
+#activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(2){
+    width: 100%;
+    height: 47%;
     max-height: 46%;
 }
 
@@ -395,33 +430,23 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     min-height: fit-content;
 }
 
-#activites img{
-    min-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#activites .sous_bloc img{
+#activites .sous_bloc .image img{
     position: unset;
     top: unset;
     left: unset;
     transform: unset;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    max-width: none;
+    min-height: 100%;
 }
-
-#pomegues .image img{
-    position: relative;
-    bottom: 110px;
-}
-
 
 .carte{
     display: flex;
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     box-shadow: 1px 2px 10px 5px #dfdbdb;
     overflow: hidden;
 }
@@ -434,7 +459,6 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     padding: 20px;
     font-size: 18px;
 }
-
 
 /* FIN ACTIVITES */
 /* FOOTER */
