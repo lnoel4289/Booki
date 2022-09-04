@@ -206,7 +206,6 @@ label{
 .suggestions{
     display: flex;
     justify-content: space-between;
-    max-height: 800px;
     margin-bottom: 60px;
 }
 
@@ -354,6 +353,7 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     max-height: 600px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 #activites .bloc_cartes{
@@ -413,7 +413,8 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 }
 
 #pomegues img{
-    height: 100%;
+    position: absolute;
+    top: 20px;
 }
 
 
