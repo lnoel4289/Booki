@@ -243,7 +243,13 @@ label{
 }
 
 .etoiles{
+    display: flex;
     font-size: 14px;
+    color: #0065FC;
+}
+
+article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-child(5), article .carte:nth-child(4) i:nth-child(5), article .carte:nth-child(5) i:nth-child(5), article .carte:nth-child(2) i:nth-child(4), aside .carte:nth-child(2) i:nth-child(5), aside .carte:nth-child(3) i:nth-child(5){
+    color: #F2F2F2;
 }
 
 /* CARTE HEBERGEMENT */
@@ -323,7 +329,7 @@ label{
 
 .suggestions aside .carte .image{
     width: 40%;
-    min-width: 31%;
+    min-width: 40%;
     border-radius: 19px 0 0 19px;
 }
 
@@ -406,11 +412,16 @@ label{
     width: 100%;
 }
 
+#pomegues img{
+    height: 100%;
+}
+
+
 .carte{
     display: flex;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 1px 2px 10px 5px #dfdbdb;
     overflow: hidden;
 }
@@ -423,6 +434,7 @@ label{
     padding: 20px;
     font-size: 18px;
 }
+
 
 /* FIN ACTIVITES */
 /* FOOTER */
