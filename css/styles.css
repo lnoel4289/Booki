@@ -3,9 +3,13 @@ html{
     box-sizing: border-box;
 }
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
+} */
+
+#marge_site{
+    margin: 0% 5% 0% 5%;
 }
 
 *, *::before, *::after{
@@ -64,7 +68,6 @@ nav a:hover{
 
 main{
     padding-top: 150px; /* hauteur du header fixe de navigation */
-    width: 92%;
     margin: auto;
 }
 
