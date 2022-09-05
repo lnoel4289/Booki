@@ -1,45 +1,42 @@
-html{
+/* GENERALITES */
+/* BOX-SIZING */
+body{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
-/* body{
-    display: flex;
-    flex-direction: column;
-} */
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+/* fin BOX-SIZING */
 
+a{
+    text-decoration: none;
+    color: black;
+}
+/* fin GENERALITES */
+
+/* CONTENEUR PRINCIPAL */
 #marge_site{
     margin: 0% 5% 0% 5%;
 }
 
-*, *::before, *::after{
-   box-sizing:inherit;
-}
-
-/* HEADER FIXE DE NAVIGATION */
-
+/* HEADER */
 header{
-    width: 100%;
-    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    position: fixed;
-    z-index: 1;
 }
 
 /* LOGO */
-
 header img{
     width: 120px;
     margin-top: 40px;
     padding-bottom: 0px;
 }
-
 /* fin LOGO */
-/* NAV */
 
+/* NAV */
 nav ul{
     display: flex;
     list-style-type: none;
@@ -52,8 +49,6 @@ nav li{
 }
 
 nav a{
-    text-decoration: none;
-    color: black;
     padding: 54px 40px 0px 40px;
 }
 
@@ -61,18 +56,15 @@ nav a:hover{
     color:#0065FC;
     border-top: 3px solid;
 }
-
 /* fin NAV */
-/* fin HEADER FIXE DE NAVIGATION*/
-/* MAIN */
+/* fin HEADER */
 
+/* MAIN */
 main{
-    padding-top: 150px; /* hauteur du header fixe de navigation */
-    margin: auto;
+    
 }
 
-/* OUTILS RECHERCHE */
-
+/* BLOC RECHERCHE */
 h1, h2{
     font-size: 30px;
     margin-top: 0;
@@ -83,12 +75,11 @@ h1 + p{
 }
 
 /* BARRE DE RECHERCHE */
-
 form{
     display: flex;
 }
 
-label, .champ_recherche, .bouton_envoi{
+label, #recherche, .bouton_envoi{
     font-size: 25px;
     padding: 20px 25px;
 }
@@ -100,7 +91,7 @@ label{
     border-radius: 25px 0 0 25px;
 }
 
-.champ_recherche{
+#recherche{
     padding-right: 0;
     border: hidden;
     border-top: 1px solid #F2F2F2;
@@ -108,7 +99,7 @@ label{
     font-weight: 700;
 }
 
-.champ_recherche::placeholder{
+#recherche::placeholder{
     color:#F2F2F2;
     opacity: 1;
 }
@@ -121,14 +112,14 @@ label{
     border-radius: 0 25px 25px 0;
     cursor: pointer;    
 }
-
 /* fin BARRE DE RECHERCHE */
-/* FILTRES */
 
+/* FILTRES */
 .section_filtres_de_recherche{
     font-size: 25px;
     font-weight: 700;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 25px;
     margin-left: 10px;
 }
@@ -176,10 +167,9 @@ label{
     padding-left: 20px;
     padding-right: 21px;
 }
-
 /* fin FILTRES */
-/* INFORMATION */
 
+/* INFORMATION */
 .information{
     display: flex;
     align-items: center;
@@ -194,29 +184,18 @@ label{
     margin: 0 20px 5px 0;
     border-radius: 25px;
 }
-
 /* fin INFORMATION */
-/* fin OUTILS RECHERCHE */
-/* ANCRES POUR MENU FIXE */
+/* fin BLOC RECHERCHE */
 
-.ancre{
-    padding-top: 150px;
-    margin-top: -150px;
-}
-
-/* fin ANCRES POUR MENU FIXE */
 /* SECTION HÉBERGEMENT */
-
-.suggestions{
+.hebergements{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
-    height: 800px;
 }
 
-/*  BLOC HEBERGEMENTS À MARSEILLE */
-
-.suggestions article, .suggestions aside{
+/*  BLOC HEBERGEMENTS */
+.hebergements article, .hebergements aside{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -224,23 +203,23 @@ label{
     border-radius: 20px;
 }
 
-.suggestions article{
+.hebergements article{
     width: 65%;
 }
 
-.suggestions aside{
+.hebergements aside{
     width: 31%;
 }
 
 /* BLOC CARTES HEBERGEMENT*/
 
-.suggestions .bloc_cartes{
+.hebergements .bloc_cartes{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.suggestions article .bloc_cartes{
+.hebergements article .bloc_cartes{
     align-content: space-between;
     flex-wrap: wrap;
     height: 85%;
@@ -263,7 +242,7 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 /* fin ETOILES GRISES */
 /* CARTE HEBERGEMENT */
 
-.suggestions article .carte{
+.hebergements article .carte{
     border: 5px solid white;
     background-color: white;
     display: flex;
@@ -278,12 +257,12 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     position: relative;
 }
 
-.suggestions article .carte .image{
+.hebergements article .carte .image{
     border-radius: 19px 19px 0 0;
     height: 60%;
 }
 
-.suggestions .carte .image img{
+.hebergements .carte .image img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -292,17 +271,17 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     min-height: 100%;
 }
 
-.suggestions .carte .description{
+.hebergements .carte .description{
     display: flex;
     flex-direction: column;
     padding: 10px 15px;
 }
 
-.suggestions .carte .description *{
+.hebergements .carte .description *{
     margin: 0px;
 }
 
-.suggestions article .carte .description{
+.hebergements article .carte .description{
     height: 40%;
     justify-content: space-around;
 }
@@ -317,47 +296,44 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 
 /* FIN CARTE HEBERGEMENT */
 /* ASIDE */
-
-.suggestions aside h2{
+.hebergements aside h2{
     display: flex;
     justify-content: space-between;
 }
 
-.suggestions aside .bloc_cartes{
+.hebergements aside .bloc_cartes{
     height: 92%;
 }
 
-.suggestions aside .carte{
+.hebergements aside .carte{
     border: 5px solid white;
     background-color: white;
     border-radius: 23px;
-    width: 100%;
     height: 28%;
     display: flex;
 }
 
-.suggestions aside .carte .image{
+.hebergements aside .carte .image{
     width: 40%;
     min-width: 40%;
     border-radius: 19px 0 0 19px;
 }
 
-.suggestions aside .carte .description{
+.hebergements aside .carte .description{
     justify-content: space-between;
 }
 
-.suggestions aside .carte .image img{
+.hebergements aside .carte .image img{
     height: 100%;
 }
 
-.suggestions aside .carte .image img:last-child{
+.hebergements aside .carte .image img:last-child{
     width: 100%;
     height: initial;
 }
+/* fin ASIDE */
 
-/* FIN ASIDE */
 /* ACTIVITES */
-
 #activites article{
     width: 100%;
     display: flex;
@@ -462,16 +438,16 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     padding: 20px;
     font-size: 18px;
 }
+/* fin ACTIVITES */
+/* fin CONTENEUR PRINCIPAL */
 
-/* FIN ACTIVITES */
 /* FOOTER */
-
 footer{
     background-color: #F2F2F2;
+    padding: 0 5% 40px;
 }
 
 footer .bloc_mentions{
-    margin: 30px 0 40px 4%;
     display: flex;
     justify-content: space-between;
 }
@@ -498,13 +474,16 @@ footer a{
     text-decoration: none;
     color: black;
 }
+/* fin FOOTER */
 
-@media all and (max-width: 992px)
+@media all and (max-width: 1024px)
 {
-
+    
 }
 
 @media all and (max-width: 768px)
 {
-    
+    header{
+        flex-direction: column;
+    }
 }
