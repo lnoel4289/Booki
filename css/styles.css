@@ -67,7 +67,7 @@ main{
 /* BLOC RECHERCHE */
 h1, h2{
     font-size: 30px;
-    margin-top: 0;
+    margin: 0 0 30px 0
 }
 
 h1 + p{
@@ -148,6 +148,10 @@ label{
     padding-right: 20px;
 }
 
+.filtre:nth-child(4){
+    margin-right: 0px
+}
+
 .filtre:hover{
     color: #0065FC;
     box-shadow: 0px 0px 10px 1px #F2F2F2;
@@ -199,12 +203,12 @@ label{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 50px;
+    padding: 3%;
     border-radius: 20px;
 }
 
 .hebergements article{
-    width: 65%;
+    width: 66%;
 }
 
 .hebergements aside{
@@ -222,7 +226,8 @@ label{
 .hebergements article .bloc_cartes{
     align-content: space-between;
     flex-wrap: wrap;
-    height: 85%;
+    height: 600px;
+    padding-bottom: 5%;
 }
 
 /* ETOILES BLEUES */
@@ -291,7 +296,6 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     color: black;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 40px;
 }
 
 /* FIN CARTE HEBERGEMENT */
@@ -309,7 +313,7 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     border: 5px solid white;
     background-color: white;
     border-radius: 23px;
-    height: 28%;
+    height: 180px;
     display: flex;
 }
 
