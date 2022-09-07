@@ -327,14 +327,14 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     justify-content: space-between;
 }
 
-.hebergements aside .carte .image img{
+/* .hebergements aside .carte .image img{
     height: 100%;
-}
+} */
 
-.hebergements aside .carte .image img:last-child{
+/* .hebergements aside .carte .image img:last-child{
     width: 100%;
     height: initial;
-}
+} */
 /* fin ASIDE */
 
 /* ACTIVITES */
@@ -360,14 +360,6 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     flex-direction: column;
     border-radius: 23px;
     justify-content: space-between;
-}
-
-#activites img{
-    min-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #activites .sous_bloc{
@@ -413,18 +405,6 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     min-height: fit-content;
 }
 
-#activites .sous_bloc .image img{
-    position: unset;
-    top: unset;
-    left: unset;
-    transform: unset;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    max-width: none;
-    min-height: 100%;
-}
-
 .carte{
     display: flex;
     text-decoration: none;
@@ -432,6 +412,12 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     font-size: 15px;
     box-shadow: 1px 2px 10px 5px #dfdbdb;
     overflow: hidden;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #activites h3{
@@ -480,6 +466,7 @@ footer a{
 }
 /* fin FOOTER */
 
+/* MEDIA QUERIES */
 @media all and (max-width: 1024px)
 {
     
@@ -491,3 +478,4 @@ footer a{
         flex-direction: column;
     }
 }
+/* fin MEDIA QUERIES */
