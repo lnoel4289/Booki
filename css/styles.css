@@ -60,9 +60,6 @@ nav a:hover{
 /* fin HEADER */
 
 /* MAIN */
-main{
-    
-}
 
 /* BLOC RECHERCHE */
 h1, h2{
@@ -265,15 +262,6 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 .hebergements article .carte .image{
     border-radius: 19px 19px 0 0;
     height: 60%;
-}
-
-.hebergements .carte .image img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    min-height: 100%;
 }
 
 .hebergements .carte .description{
