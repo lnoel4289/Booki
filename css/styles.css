@@ -504,7 +504,41 @@ footer a{
         flex-direction: column;
     }
 
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    nav a{
+        padding: 0;
+    }
+
+    nav li{
+        padding: 0 10%;
+    }
+
+    .hebergements article, .hebergements aside{
+        border-radius: unset;
+    }
+
+    .hebergements article{
+        background-color: unset;
+    }
+
     .bloc_cartes{
+        width: 100%;
+    }
+
+    .hebergements article .bloc_cartes{
+        height: unset;
+        flex-flow: column;
+    }
+
+    .hebergements aside .carte, .hebergements article .carte{
         width: 100%;
     }
 
@@ -515,9 +549,32 @@ footer a{
         margin: 0;
     }
 
+    #activites .sous_bloc{
+        width: unset;
+        max-height: unset;
+    }
+
+    #activites .carte{
+        height: unset;
+        max-height: unset;
+        width: unset;
+        max-width: unset;
+    }
+
     .carte{
-        width: 100%;
-        margin: 20px;
+        width: 100%;   
+    }
+
+    form{
+        width: 320px;
+    }
+
+    .bouton_envoi{
+        font-size: 3.4px;
+        color: #0065FC;
+        background-color: white;
+        border-color:#F2F2F2 ;
+        border-left: white;
     }
 }
 /* fin MEDIA QUERIES */
