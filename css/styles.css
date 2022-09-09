@@ -47,7 +47,7 @@ nav li{
 }
 
 nav a{
-    padding: 60px 40px 40px 40px;
+    padding: 61px 40px 40px 40px;
 }
 
 nav a:hover{
@@ -110,6 +110,10 @@ label{
     border:1px solid #0065FC;
     border-radius: 0 25px 25px 0;
     cursor: pointer;    
+}
+
+.bouton_envoi:hover{
+    background-color: rgb(46, 40, 165);
 }
 /* fin BARRE DE RECHERCHE */
 
@@ -286,6 +290,11 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     color: black;
     font-size: 22px;
     font-weight: bold;
+    width:140px;
+}
+
+.afficher_plus:hover{
+    color: #0065FC;
 }
 
 /* FIN CARTE HEBERGEMENT */
@@ -399,8 +408,9 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     text-decoration: none;
     color: black;
     font-size: 15px;
-    box-shadow: 1px 2px 10px 5px #dfdbdb;
+    box-shadow: 1px 2px 10px 1px #ece7e7;
     overflow: hidden;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
 }
 
 .carte img{
@@ -408,6 +418,11 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
     height: 100%;
     object-fit: cover;
 }
+
+.carte:hover{
+    transform: scale(1.10, 1.10);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  }
 
 #activites h3{
     display: flex;
@@ -544,6 +559,11 @@ footer a:hover{
         margin: 0;
     }
 
+    h1, h2{
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
     .bouton_envoi{
         font-size: 3.4px;
         color: #0065FC;
@@ -554,6 +574,10 @@ footer a:hover{
 
     .section_filtres_de_recherche, .information{
         margin-left: 0;
+    }
+
+    .filtre{
+        margin-right: 10px;
     }
 
     .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
@@ -574,17 +598,21 @@ footer a:hover{
         height: unset;
     }
 
+    .carte{
+        font-size: 21px;
+    }
+
     .hebergements aside .carte, .hebergements article .carte{
         width: 100%;
         margin-bottom: 5%;
     }
 
     .hebergements aside .carte{
-        height: 200px;
+        height: 210px;
     }
 
     .hebergements article .carte{
-        height: 350px;
+        height: 280px;
     }
 
     #activites .bloc_cartes{
@@ -599,9 +627,20 @@ footer a:hover{
     }
 
     #activites .carte, #activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(1), #activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(2), #activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(1), #activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(2){
-        height: 350px;
+        height: 250px;
         width: unset;
         margin-bottom: 8%;
+    }
+
+    #activites .image{
+        min-height: unset;
+    }
+
+    #activites h3{
+        height: 80px;
+        margin: 0;
+        padding: 20px;
+        font-size: 23px;
     }
 
     footer .bloc_mentions{
