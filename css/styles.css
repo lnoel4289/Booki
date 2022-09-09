@@ -18,7 +18,7 @@ a{
 
 /* CONTENEUR PRINCIPAL */
 #marge_site{
-    margin: 0% 5% 0% 5%;
+    margin: 0 5%;
 }
 
 /* HEADER */
@@ -465,7 +465,7 @@ footer a{
 @media all and (max-width: 991.98px){
 
     .hebergements{
-        flex-wrap: wrap-reverse;
+        flex-flow: column-reverse;
     }
 
     .hebergements article, .hebergements aside{
@@ -500,6 +500,10 @@ footer a{
         margin: 0;
     }
 
+    main{
+        margin: 0 5%;
+    }
+
     header{
         flex-direction: column;
     }
@@ -521,6 +525,10 @@ footer a{
         padding: 0 10%;
     }
 
+    .hebergements{
+        flex-direction: column-reverse;
+    }
+
     .hebergements article, .hebergements aside{
         border-radius: unset;
     }
@@ -535,16 +543,22 @@ footer a{
 
     .hebergements article .bloc_cartes{
         height: unset;
-        flex-flow: column;
     }
 
     .hebergements aside .carte, .hebergements article .carte{
         width: 100%;
     }
 
+    .hebergements aside .carte{
+        height: 200px;
+    }
+
+    .hebergements article .carte{
+        height: 350px;
+    }
+
     #activites .bloc_cartes{
         width: 100%;
-        max-width: 100%;
         flex-direction: column;
         margin: 0;
     }
@@ -554,19 +568,9 @@ footer a{
         max-height: unset;
     }
 
-    #activites .carte{
-        height: unset;
-        max-height: unset;
+    #activites .carte, #activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(1), #activites .bloc_cartes:nth-child(1) .sous_bloc .carte:nth-child(2), #activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(1), #activites .bloc_cartes:nth-child(2) .sous_bloc .carte:nth-child(2){
+        height: 350px;
         width: unset;
-        max-width: unset;
-    }
-
-    .carte{
-        width: 100%;   
-    }
-
-    form{
-        width: 320px;
     }
 
     .bouton_envoi{
@@ -575,6 +579,14 @@ footer a{
         background-color: white;
         border-color:#F2F2F2 ;
         border-left: white;
+    }
+
+    footer .bloc_mentions{
+        flex-direction: column;
+    }
+
+    footer .mentions{
+        width: unset;
     }
 }
 /* fin MEDIA QUERIES */
