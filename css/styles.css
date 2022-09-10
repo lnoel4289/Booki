@@ -22,8 +22,11 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    /* background-color: white;
-    z-index: 1; */
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 }
 
 /* LOGO */
@@ -61,6 +64,12 @@ nav a:hover{
 
 main{
     margin: 0 5%;
+    padding-top: 155px;
+}
+
+.ancre{
+    padding-top: 155px;
+    margin-top: -155px;
 }
 
 /* BLOC RECHERCHE */
@@ -294,8 +303,8 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 .afficher_plus{
     text-decoration: none;
     color: black;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 21px;
+    font-weight: 600;
     width:140px;
 }
 
@@ -542,6 +551,10 @@ footer a:hover{
         padding: 0;
     }
 
+    header img{
+        margin: 20px 0 0 45px;
+    }
+
     nav{
         width: 100%;
     }
@@ -605,10 +618,19 @@ footer a:hover{
         margin-right: 10px;
     }
 
+    main{
+        padding-top: 173px;
+    }
+    
+    .ancre{
+        padding-top: 173px;
+        margin-top: -173px;
+    }
+
     .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
         border-radius: unset;
-        padding: 5%;
-        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .hebergements article{
@@ -688,6 +710,10 @@ footer a:hover{
 
 /* TABLETTE XS + MOBILE */
 @media all and (max-width: 470px){
+    h1, h2{
+        font-size: 28px;
+    }
+    
     #recherche{
         width: 280px;
     }
@@ -711,11 +737,12 @@ footer a:hover{
 
 @media all and (max-width: 424.98px){
     .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
-        padding: 0 1%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     header img{
-        margin: 0 0 0 45px;
+        margin-top: 0
     }
 
     h1, h2{
