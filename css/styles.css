@@ -120,9 +120,6 @@ label{
 .fa-sharp{
     font-size: 0px;
     color: white;
-    position: absolute;
-    left: 374px;
-    top: 25px;
 }
 /* fin BARRE DE RECHERCHE */
 
@@ -586,6 +583,9 @@ footer a:hover{
 
     .fa-sharp{
         font-size: 23px;
+        position: absolute;
+        left: 374px;
+        top: 25px;
     }
 
     .section_filtres_de_recherche, .information{
@@ -666,6 +666,15 @@ footer a:hover{
     footer .mentions{
         width: unset;
     }
+
+    footer h4{
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    footer li{
+        font-size: 28px;
+    }
 }
 
 /* TABLETTE XS + MOBILE */
@@ -675,7 +684,33 @@ footer a:hover{
     }
 
     form{
-        width: 5%;
         font-size: 18px;
+    }
+}
+
+@media all and (max-width: 430px){
+    #recherche{
+        width: 199px;
+        /* height: 50px; */
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    label, .bouton_envoi{
+        /* width: 50px;
+        height: 50px;
+        padding: 0; */
+    }
+
+    .bouton_envoi{
+        left: 244px;
+    }
+
+    .fa-sharp{
+        left: 269px;
+    }
+
+    footer li{
+        font-size: 22px;
     }
 }
