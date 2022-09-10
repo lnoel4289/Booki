@@ -125,7 +125,7 @@ label{
 
 /* FILTRES */
 .section_filtres_de_recherche{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
@@ -483,12 +483,20 @@ footer a:hover{
 /* --------MEDIA QUERIES-------- */
 
 /* DESKTOP */
-@media all and (min-width: 1334px){
-    /* body{
-        min-width: 1334px;} */
+@media all and (min-width: 2750px){
+    html{
+        margin-left: 20%;
+        margin-right: 20%;
+        border: 2px solid #F2F2F2;
+    }
 }
 
-/* TABLETTE */
+@media all and (min-width: 2160px){
+    .hebergements article .bloc_cartes {
+        height: 800px;
+    }
+}
+
 @media all and (max-width: 1333.98px){
 
     .hebergements{
@@ -530,6 +538,7 @@ footer a:hover{
 
     header{
         flex-direction: column;
+        margin: 0;
         padding: 0;
     }
 
@@ -679,8 +688,20 @@ footer a:hover{
 
 /* TABLETTE XS + MOBILE */
 @media all and (max-width: 470px){
-    .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
-            padding: 5% 1%;
+    #recherche{
+        width: 250px;
+    }
+
+    .bouton_envoi{
+        font-size: 0px;
+        left: 312px;
+    }
+
+    .fa-sharp{
+        font-size: 23px;
+        position: absolute;
+        left: 337px;
+        top: 25px;
     }
 
     form{
@@ -688,18 +709,56 @@ footer a:hover{
     }
 }
 
-@media all and (max-width: 430px){
+@media all and (max-width: 424.98px){
+    .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
+        padding: 0 1%;
+    }
+
+    header img{
+        margin: 0 0 0 45px;
+    }
+
+    h1, h2{
+        font-size: 23px;
+    }
+
     #recherche{
-        width: 199px;
-        /* height: 50px; */
+        width: 250px;
         font-size: 18px;
         padding: 10px;
     }
 
-    label, .bouton_envoi{
-        /* width: 50px;
-        height: 50px;
-        padding: 0; */
+    #recherche{
+        width: 250px;
+    }
+
+    .bouton_envoi{
+        left: 296px;
+    }
+
+    .fa-sharp{
+        left: 320px;
+    }
+}
+
+@media all and (max-width: 374.98px){
+    header img{
+        margin: 20px 0 0 45px;
+    }
+
+    nav a{
+        text-align: end;
+        padding: 0 5px 20px;
+    }
+
+    h1, h2{
+        font-size: 23px;
+    }
+
+    #recherche{
+        width: 199px;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .bouton_envoi{
@@ -708,9 +767,5 @@ footer a:hover{
 
     .fa-sharp{
         left: 269px;
-    }
-
-    footer li{
-        font-size: 22px;
     }
 }
