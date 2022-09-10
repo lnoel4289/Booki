@@ -76,6 +76,7 @@ h1 + p{
 /* BARRE DE RECHERCHE */
 form{
     display: flex;
+    position: relative;
 }
 
 label, #recherche, .bouton_envoi{
@@ -114,6 +115,14 @@ label{
 
 .bouton_envoi:hover{
     background-color: rgb(46, 40, 165);
+}
+
+.fa-sharp{
+    font-size: 0px;
+    color: white;
+    position: absolute;
+    left: 394px;
+    top: 25px;
 }
 /* fin BARRE DE RECHERCHE */
 
@@ -477,13 +486,13 @@ footer a:hover{
 /* --------MEDIA QUERIES-------- */
 
 /* DESKTOP */
-@media all and (min-width: 992px){
-    body{
-        min-width: 1334px;}
+@media all and (min-width: 1334px){
+    /* body{
+        min-width: 1334px;} */
 }
 
 /* TABLETTE */
-@media all and (max-width: 991.98px){
+@media all and (max-width: 1333.98px){
 
     .hebergements{
         flex-flow: column-reverse;
@@ -565,11 +574,18 @@ footer a:hover{
     }
 
     .bouton_envoi{
-        font-size: 3.4px;
-        color: #0065FC;
-        background-color: white;
+        font-size: 0px;
+        width: 70.75px;
+        height: 70.75px;
         border-color:#F2F2F2 ;
         border-left: white;
+        border-radius: 25px;
+        position: absolute;
+        left: 370px;
+    }
+
+    .fa-sharp{
+        font-size: 23px;
     }
 
     .section_filtres_de_recherche, .information{
