@@ -121,7 +121,7 @@ label{
     font-size: 0px;
     color: white;
     position: absolute;
-    left: 394px;
+    left: 374px;
     top: 25px;
 }
 /* fin BARRE DE RECHERCHE */
@@ -524,7 +524,7 @@ footer a:hover{
     }
 }
 
-/* SMARTPHONE */
+/* TABLETTE S */
 @media all and (max-width: 767.98px){ 
 
     main{
@@ -581,7 +581,7 @@ footer a:hover{
         border-left: white;
         border-radius: 25px;
         position: absolute;
-        left: 370px;
+        left: 350px;
     }
 
     .fa-sharp{
@@ -665,5 +665,17 @@ footer a:hover{
 
     footer .mentions{
         width: unset;
+    }
+}
+
+/* TABLETTE XS + MOBILE */
+@media all and (max-width: 470px){
+    .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
+            padding: 5% 1%;
+    }
+
+    form{
+        width: 5%;
+        font-size: 18px;
     }
 }
