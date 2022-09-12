@@ -76,12 +76,12 @@ nav li{
 }
 
 nav a{
-    padding: 62px 40px 40px 40px;
+    padding: 60px 40px 40px 40px;
 }
 
 nav a:hover{
     color:#0065FC;
-    border-top: 3px solid;
+    border-top: 5px solid;
 }
 /* fin NAV */
 /* fin HEADER FIXE */
@@ -134,8 +134,7 @@ label{
 }
 
 #recherche::placeholder{
-    color:#F2F2F2;
-    opacity: 1;
+    color:grey;
 }
 
 .bouton_envoi{
@@ -151,12 +150,9 @@ label{
     background-color: rgb(46, 40, 165);
 }
 
-/* LOUPE DU BOUTON ENVOI*/
-.fa-sharp{
-    font-size: 0px;
-    color: white;
+.bouton_envoi2{
+    display: none;
 }
-/* finLOUPE DU BOUTON ENVOI*/
 /* fin BARRE DE RECHERCHE */
 
 /* FILTRES */
@@ -592,12 +588,12 @@ footer a:hover{
         width: 100%;
         text-align: center;
         padding: 0 0 20px 0;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 5px solid #F2F2F2;
     }
 
     nav a:hover{
         border-top: unset;
-        border-bottom: 3px solid;
+        border-bottom: 5px solid;
     }
     /* fin header FIXE */
 
@@ -644,24 +640,22 @@ footer a:hover{
     /* BARRE DE RECHERCHE */
     /* BOUTON ENVOI */
     .bouton_envoi{
-        font-size: 0px;
-        width: 70.75px;
-        height: 70.75px;
-        border-color:#F2F2F2 ;
-        border-left: white;
-        border-radius: 25px;
-        position: absolute;
-        left: 350px;
+        display: none;
     }
 
-    /* LOGO LOUPE */
-    .fa-sharp{
+    .bouton_envoi2{
+        /* position: absolute; */
+        right: 0px;
+        display: initial;
         font-size: 23px;
-        position: absolute;
-        left: 374px;
-        top: 25px;
+        width: 70.75px;
+        height: 70.75px;
+        /* border-left: white; */
+        border-radius: 25px;
+        color: white;
+        background-color:#0065FC;
+        border:1px solid #0065FC;
     }
-    /* finLOGO LOUPE */
     /* fin BOUTON ENVOI */
     /* fin BARRE DE RECHERCHE */
 
