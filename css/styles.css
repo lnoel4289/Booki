@@ -110,9 +110,11 @@ h1 + p{
 }
 
 /* BARRE DE RECHERCHE */
+.barre2{
+    display: none;
+}
 form{
     display: flex;
-    position: relative;
 }
 
 label, #recherche, .bouton_envoi{
@@ -148,19 +150,6 @@ label{
 
 .bouton_envoi:hover{
     background-color: rgb(46, 40, 165);
-}
-
-.bouton_envoi2{
-    /* position: absolute; */
-    /* right: 0px; */
-    font-size: 23px;
-    width: 70.75px;
-    height: 70.75px;
-    /* border-left: white; */
-    border-radius: 25px;
-    color: white;
-    background-color:#0065FC;
-    border:1px solid #0065FC;
 }
 /* fin BARRE DE RECHERCHE */
 
@@ -647,18 +636,23 @@ footer a:hover{
 
     /* BLOC RECHERCHE */
     /* BARRE DE RECHERCHE */
+    .barre1{
+        display: none;
+    }
+
+    .barre2{
+        display: initial;
+    }
+
     .bouton_envoi2{
-        /* position: absolute; */
-        /* right: 0px; */
-        /* display: initial; */
-        font-size: 23px;
         width: 70.75px;
-        height: 70.75px;
-        /* border-left: white; */
+        font-size: 23px;
         border-radius: 25px;
         color: white;
         background-color:#0065FC;
         border:1px solid #0065FC;
+        position: relative;
+        right: 25px;
     }
     
     /* fin BARRE DE RECHERCHE */
