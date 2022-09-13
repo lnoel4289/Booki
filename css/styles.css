@@ -151,7 +151,16 @@ label{
 }
 
 .bouton_envoi2{
-    display: none;
+    /* position: absolute; */
+    /* right: 0px; */
+    font-size: 23px;
+    width: 70.75px;
+    height: 70.75px;
+    /* border-left: white; */
+    border-radius: 25px;
+    color: white;
+    background-color:#0065FC;
+    border:1px solid #0065FC;
 }
 /* fin BARRE DE RECHERCHE */
 
@@ -638,15 +647,10 @@ footer a:hover{
 
     /* BLOC RECHERCHE */
     /* BARRE DE RECHERCHE */
-    /* BOUTON ENVOI */
-    .bouton_envoi{
-        display: none;
-    }
-
     .bouton_envoi2{
         /* position: absolute; */
-        right: 0px;
-        display: initial;
+        /* right: 0px; */
+        /* display: initial; */
         font-size: 23px;
         width: 70.75px;
         height: 70.75px;
@@ -656,7 +660,7 @@ footer a:hover{
         background-color:#0065FC;
         border:1px solid #0065FC;
     }
-    /* fin BOUTON ENVOI */
+    
     /* fin BARRE DE RECHERCHE */
 
     /* FILTRES */
