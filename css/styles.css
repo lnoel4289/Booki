@@ -117,7 +117,7 @@ form{
     display: flex;
 }
 
-label, #recherche, .bouton_envoi{
+label, #recherche, #recherche2, .bouton_envoi{
     font-size: 25px;
     padding: 20px 25px;
 }
@@ -127,16 +127,12 @@ label{
     border-radius: 25px 0 0 25px;
 }
 
-#recherche{
+#recherche, #recherche2{
     padding-right: 0;
     border: hidden;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     font-weight: 700;
-}
-
-#recherche::placeholder{
-    color:grey;
 }
 
 .bouton_envoi{
@@ -635,28 +631,6 @@ footer a:hover{
     /* fin TITRES h1 h2 */
 
     /* BLOC RECHERCHE */
-    /* BARRE DE RECHERCHE */
-    .barre1{
-        display: none;
-    }
-
-    .barre2{
-        display: initial;
-    }
-
-    .bouton_envoi2{
-        width: 70.75px;
-        font-size: 23px;
-        border-radius: 25px;
-        color: white;
-        background-color:#0065FC;
-        border:1px solid #0065FC;
-        position: relative;
-        right: 25px;
-    }
-    
-    /* fin BARRE DE RECHERCHE */
-
     /* FILTRES */
     .section_filtres_de_recherche, .information{
         margin-left: 0;
@@ -750,30 +724,39 @@ footer a:hover{
 }
 /* fin TABLETTE */
 
+/* 649px max */
+@media all and (max-width: 649px){
+    .barre1{
+        display: none;
+    }
+
+    .barre2{
+        display: initial;
+    }
+
+    .bouton_envoi2{
+        min-width: 70.75px;
+        font-size: 23px;
+        border-radius: 25px;
+        color: white;
+        background-color:#0065FC;
+        border:1px solid #0065FC;
+        position: relative;
+        right: 25px;
+    }
+}
+/* fin 649px max */
+
 /* MOBILE */
-@media all and (max-width: 470px){
+@media all and (max-width: 472px){
     h1, h2{
         font-size: 28px;
     }
-    
-    #recherche{
-        width: 280px;
-    }
 
-    .bouton_envoi{
-        font-size: 0px;
-        left: 312px;
-    }
-
-    .fa-sharp{
-        font-size: 23px;
-        position: absolute;
-        left: 337px;
-        top: 25px;
-    }
-
-    form{
+    #recherche2{
+        width: 100%;
         font-size: 18px;
+        padding: 10px;
     }
 }
 /* fin MOBILE */
@@ -792,24 +775,6 @@ footer a:hover{
     h1, h2{
         font-size: 23px;
     }
-
-    #recherche{
-        width: 250px;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    #recherche{
-        width: 250px;
-    }
-
-    .bouton_envoi{
-        left: 296px;
-    }
-
-    .fa-sharp{
-        left: 320px;
-    }
 }
 /* fin MOBILE S */
 
@@ -826,20 +791,6 @@ footer a:hover{
 
     h1, h2{
         font-size: 23px;
-    }
-
-    #recherche{
-        width: 199px;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .bouton_envoi{
-        left: 244px;
-    }
-
-    .fa-sharp{
-        left: 269px;
     }
     
     .filtre p{
