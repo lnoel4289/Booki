@@ -110,14 +110,11 @@ h1 + p{
 }
 
 /* BARRE DE RECHERCHE */
-.barre2{
-    display: none;
-}
 form{
     display: flex;
 }
 
-label, #recherche, #recherche2, .bouton_envoi{
+label, #recherche, .bouton_envoi, .bouton_envoi2{
     font-size: 25px;
     padding: 20px 25px;
 }
@@ -127,7 +124,7 @@ label{
     border-radius: 25px 0 0 25px;
 }
 
-#recherche, #recherche2{
+#recherche{
     padding-right: 0;
     border: hidden;
     border-top: 1px solid #F2F2F2;
@@ -135,13 +132,17 @@ label{
     font-weight: 700;
 }
 
-.bouton_envoi{
+.bouton_envoi, .bouton_envoi2{
     color: white;
     font-weight: 700;
     background-color:#0065FC;
     border:1px solid #0065FC;
     border-radius: 0 25px 25px 0;
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+.bouton_envoi2{
+    display: none;
 }
 
 .bouton_envoi:hover{
@@ -726,21 +727,15 @@ footer a:hover{
 
 /* 649px max */
 @media all and (max-width: 649px){
-    .barre1{
+    .bouton_envoi{
         display: none;
     }
 
-    .barre2{
-        display: initial;
-    }
-
     .bouton_envoi2{
+        display: initial;
         min-width: 70.75px;
         font-size: 23px;
         border-radius: 25px;
-        color: white;
-        background-color:#0065FC;
-        border:1px solid #0065FC;
         position: relative;
         right: 25px;
     }
@@ -748,12 +743,12 @@ footer a:hover{
 /* fin 649px max */
 
 /* MOBILE */
-@media all and (max-width: 472px){
+@media all and (max-width: 480px){
     h1, h2{
         font-size: 28px;
     }
 
-    #recherche2{
+    #recherche{
         width: 100%;
         font-size: 18px;
         padding: 10px;
