@@ -1,5 +1,5 @@
 /* GENERALITES */
-/* BOX-SIZING */
+/* PROPRIETE BOX-SIZING */
 body{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -8,13 +8,14 @@ body{
 *, *::before, *::after{
     box-sizing:inherit;
 }
-/* fin BOX-SIZING */
+/* fin PROPRIETE BOX-SIZING */
 
 a{
     text-decoration: none;
     color: black;
 }
 
+/* CARTE GENERALITES */
 .carte{
     display: flex;
     text-decoration: none;
@@ -40,9 +41,10 @@ a{
     transform: scale(1.10, 1.10);
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
   }
+/* fin CARTE GENERALITES */
 /* fin GENERALITES */
 
-/* HEADER FIXE */
+/* header DE NAVIGATION FIXE */
 header{
     display: flex;
     justify-content: space-between;
@@ -55,13 +57,13 @@ header{
     top: 0;
 }
 
-/* LOGO */
+/* LOGO DU SITE */
 header img{
     width: 150px;
     margin: 40px 0 0 20px;
     padding-bottom: 0px;
 }
-/* fin LOGO */
+/* fin LOGO DU SITE */
 
 /* NAV */
 nav ul{
@@ -84,13 +86,7 @@ nav a:hover{
     border-top: 5px solid;
 }
 /* fin NAV */
-/* fin HEADER FIXE */
-
-/* PAGE ENTRE HEADER ET FOOTER */
-main{
-    margin: 0 5%;
-    padding-top: 155px;
-}
+/* fin header DE NAVIGATION FIXE */
 
 /* ANCRE POUR MENU FIXE */
 .ancre{
@@ -99,7 +95,13 @@ main{
 }
 /* fin ANCRE POUR MENU FIXE */
 
-/* SECTION RECHERCHE */
+/* PAGE ENTRE header ET footer */
+main{
+    margin: 0 5%;
+    padding-top: 155px;
+}
+
+/* BLOC RECHERCHE */
 h1, h2{
     font-size: 30px;
     margin: 0 0 30px 0
@@ -238,7 +240,7 @@ label{
     margin-bottom: 60px;
 }
 
-/*  2 BLOCS GRIS (article aside) */
+/* article HEBERGEMENTS aside LES PLUS POPULAIRES */
 .hebergements article, .hebergements aside{
     display: flex;
     flex-direction: column;
@@ -255,7 +257,7 @@ label{
     width: 31%;
 }
 
-/* BLOC CARTES "HEBERGEMENT" (article) */
+/* article HEBERGEMENTS */
 .hebergements .bloc_cartes{
     display: flex;
     justify-content: space-between;
@@ -371,7 +373,7 @@ article .carte:nth-child(1) i:nth-child(5), article .carte:nth-child(2) i:nth-ch
 /* fin BLOC CARTES "LES PLUS POPULAIRES" (aside) */
 /* fin aside "LES PLUS POPULAIRES" */
 
-/* section #activites */
+/* section ACTIVITES */
 #activites article{
     width: 100%;
     display: flex;
@@ -499,7 +501,7 @@ footer a:hover{
 
 /* ---------MEDIA QUERIES--------- */
 
-/* DESKTOP 4K */
+/* DESKTOP JUSQUE 4K */
 @media all and (min-width: 2750px){
     html{
         margin-left: 20%;
@@ -507,15 +509,15 @@ footer a:hover{
         border: 2px solid #F2F2F2;
     }
 }
-/* fin DESKTOP 4K */
+/* fin DESKTOP JUSQUE 4K */
 
-/* AJUSTEMENT DESKTOP XL */
+/* AJUSTEMENT DESKTOP > 2159px */
 @media all and (min-width: 2160px){
     .hebergements article .bloc_cartes {
         height: 800px;
     }
 }
-/* fin AJUSTEMENT DESKTOP XL */
+/* fin AJUSTEMENT DESKTOP > 2159px */
 
 /* DESKTOP <1334PX */
 @media all and (max-width: 1333.98px){
@@ -550,7 +552,7 @@ footer a:hover{
 }
 /* fin DESKTOP <1334PX */
 
-/* TABLETTE */
+/* TABLETTE < 768px */
 @media all and (max-width: 767.98px){ 
 
     /* header FIXE */
@@ -723,9 +725,9 @@ footer a:hover{
     }
     /* fin footer */
 }
-/* fin TABLETTE */
+/* fin TABLETTE < 768px */
 
-/* 649px max */
+/* 649px max - BOUTON ENVOI LOUPE */
 @media all and (max-width: 649px){
     .bouton_envoi{
         display: none;
@@ -742,7 +744,7 @@ footer a:hover{
 }
 /* fin 649px max */
 
-/* MOBILE */
+/* MOBILE 480px - 425px */
 @media all and (max-width: 480px){
     h1, h2{
         font-size: 28px;
@@ -754,9 +756,9 @@ footer a:hover{
         padding: 10px;
     }
 }
-/* fin MOBILE */
+/* fin MOBILE 480px - 425px */
 
-/* MOBILE S */
+/* MOBILE < 425px */
 @media all and (max-width: 424.98px){
     .hebergements article, .hebergements aside, #activites, footer, .section_recherche{
         padding-left: 1%;
@@ -771,9 +773,9 @@ footer a:hover{
         font-size: 23px;
     }
 }
-/* fin MOBILE S */
+/* fin MOBILE < 425px */
 
-/* MOBILE XS */
+/* MOBILE < 375px */
 @media all and (max-width: 374.98px){
     header img{
         margin-left: 45px;
@@ -792,5 +794,5 @@ footer a:hover{
         margin-right: 0;
     }
 }
-/* fin MOBILE XS */
+/* fin MOBILE < 375px */
 /* fin MEDIA QUERIES */
