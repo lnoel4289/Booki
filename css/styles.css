@@ -65,7 +65,7 @@ header img{
 }
 /* fin LOGO DU SITE */
 
-/* NAV */
+/* nav */
 nav ul{
     display: flex;
     list-style-type: none;
@@ -88,12 +88,12 @@ nav a:hover{
 /* fin NAV */
 /* fin header DE NAVIGATION FIXE */
 
-/* ANCRE POUR MENU FIXE */
+/* ANCRE POUR LIENS MENU FIXE */
 .ancre{
     padding-top: 155px;
     margin-top: -155px;
 }
-/* fin ANCRE POUR MENU FIXE */
+/* fin ANCRE POUR LIENS MENU FIXE */
 
 /* PAGE ENTRE header ET footer */
 main{
@@ -511,13 +511,13 @@ footer a:hover{
 }
 /* fin DESKTOP JUSQUE 4K */
 
-/* AJUSTEMENT DESKTOP > 2159px */
+/* DESKTOP > 2159px */
 @media all and (min-width: 2160px){
     .hebergements article .bloc_cartes {
         height: 800px;
     }
 }
-/* fin AJUSTEMENT DESKTOP > 2159px */
+/* fin DESKTOP > 2159px */
 
 /* DESKTOP <1334PX */
 @media all and (max-width: 1333.98px){
