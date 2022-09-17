@@ -503,10 +503,12 @@ footer a:hover{
 
 /* DESKTOP JUSQUE 4K */
 @media all and (min-width: 2750px){
-    html{
+    header{
+        padding: 0 20%;
+    }
+    main, footer{
         margin-left: 20%;
         margin-right: 20%;
-        border: 2px solid #F2F2F2;
     }
 }
 /* fin DESKTOP JUSQUE 4K */
@@ -522,7 +524,7 @@ footer a:hover{
 /* DESKTOP <1334PX */
 @media all and (max-width: 1333.98px){
     .hebergements{
-        flex-flow: column-reverse;
+        flex-flow: column-reverse; 
     }
 
     .hebergements article, .hebergements aside{
