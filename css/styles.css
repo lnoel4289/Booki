@@ -265,7 +265,6 @@ label{
 }
 
 .hebergements article .bloc_cartes{
-    align-content: space-between;
     flex-wrap: wrap;
     height: 600px;
     padding-bottom: 5%;
