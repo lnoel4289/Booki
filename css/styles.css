@@ -1,4 +1,11 @@
 /* GENERALITES */
+
+:root{
+    --couleur_gris: #F2F2F2;
+    --couleur_bleu: #0065FC;
+    --couleur_bleu_clair: #DEEBFF;
+}
+
 /* PROPRIETE BOX-SIZING */
 body{
     font-family: 'Raleway', sans-serif;
@@ -137,7 +144,7 @@ label{
 .bouton_envoi, .bouton_envoi2{
     color: white;
     font-weight: 700;
-    background-color:#0065FC;
+    background-color:var(--couleur_bleu, black);
     border:1px solid #0065FC;
     border-radius: 0 25px 25px 0;
     cursor: pointer;
